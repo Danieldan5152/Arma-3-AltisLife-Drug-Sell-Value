@@ -57,6 +57,8 @@ begin
   iDCrystalMeh := 75000;
   iDHeroin := 8000;
   iDMarijuana := 5000;
+
+  frmDrugSellP.sedCops.SetFocus;
 end;
 //how many cops
 procedure CopsZero;// no cops on
@@ -203,6 +205,7 @@ begin
   frmDrugSellP.cmbxDrug.ItemIndex := -1;
   frmDrugSellP.cmbxDrug.Text := 'Drug Type';
   frmDrugSellP.sedDrugStock.Value := 0;
+  frmDrugSellP.sedCops.SetFocus;
 end;
 
 procedure TfrmDrugSellP.bmbRetryClick(Sender: TObject);

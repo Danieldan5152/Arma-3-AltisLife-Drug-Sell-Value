@@ -1,9 +1,11 @@
 object frmDrugSellP: TfrmDrugSellP
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
   Caption = 'Drugs Selling Price'
-  ClientHeight = 192
-  ClientWidth = 483
+  ClientHeight = 202
+  ClientWidth = 493
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
