@@ -1,0 +1,97 @@
+object frmDrugSellP: TfrmDrugSellP
+  Left = 0
+  Top = 0
+  Caption = 'frmDrugSellP'
+  ClientHeight = 299
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblCops: TLabel
+    Left = 24
+    Top = 8
+    Width = 34
+    Height = 13
+    Caption = 'lblCops'
+  end
+  object lblDrug: TLabel
+    Left = 192
+    Top = 8
+    Width = 33
+    Height = 13
+    Caption = 'lblDrug'
+  end
+  object lblDrugStock: TLabel
+    Left = 344
+    Top = 8
+    Width = 59
+    Height = 13
+    Caption = 'lblDrugStock'
+  end
+  object lblSellPrice: TLabel
+    Left = 56
+    Top = 120
+    Width = 49
+    Height = 13
+    Caption = 'lblSellPrice'
+  end
+  object sedCops: TSpinEdit
+    Left = 24
+    Top = 48
+    Width = 121
+    Height = 22
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 0
+    Value = 0
+  end
+  object cmbxDrug: TComboBox
+    Left = 160
+    Top = 48
+    Width = 145
+    Height = 21
+    TabOrder = 1
+    Text = 'cmbxDrug'
+  end
+  object sedDrugStock: TSpinEdit
+    Left = 328
+    Top = 48
+    Width = 121
+    Height = 22
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 2
+    Value = 0
+  end
+  object btnCalculate: TButton
+    Left = 56
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'btnCalculate'
+    TabOrder = 3
+    OnClick = btnCalculateClick
+  end
+  object bmbRetry: TBitBtn
+    Left = 244
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'bmbRetry'
+    TabOrder = 4
+  end
+  object bmbClose: TBitBtn
+    Left = 432
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'bmbClose'
+    TabOrder = 5
+  end
+end

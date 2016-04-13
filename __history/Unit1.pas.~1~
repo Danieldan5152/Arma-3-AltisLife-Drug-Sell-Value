@@ -1,0 +1,75 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.StdCtrls,Math,
+  Vcl.Samples.Spin;
+
+type
+  TfrmDrugSellP = class(TForm)
+    sedCops: TSpinEdit;
+    cmbxDrug: TComboBox;
+    sedDrugStock: TSpinEdit;
+    lblCops: TLabel;
+    lblDrug: TLabel;
+    lblDrugStock: TLabel;
+    btnCalculate: TButton;
+    bmbRetry: TBitBtn;
+    bmbClose: TBitBtn;
+    lblSellPrice: TLabel;
+    procedure btnCalculateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDrugSellP: TfrmDrugSellP;
+  eCop0, eCop1, eCop2, eCop3, eCop4, eCop5, eCop6,
+    eCop7, eCop8, eCop9, eCop9B : extended;
+
+implementation
+
+{$R *.dfm}
+
+procedure Beginfrm;//start of form values
+begin
+  eCop0 := 0.35;
+  eCop1 := 0.46;
+  eCop2 := 0.57;
+  eCop3 := 0.67;
+  eCop4 := 0.78;
+  eCop5 := 0.89;
+  eCop6 := 1.0;
+  eCop7 := 1.1;
+  eCop8 := 1.2;
+  eCop9 := 1.3;
+  eCop9B := 1.4;
+end;
+
+procedure Calculate;
+var
+  iCops, iDrugType, iDrugStock : integer;
+
+begin
+  // Get values
+  iCops := frmDrugSellP.sedCops.Value;
+  iDrugType := frmDrugSellP.cmbxDrug.ItemIndex;
+  iDrugStock := frmDrugSellP.sedDrugStock.Value;
+  //////
+  case iCops of
+  0 :
+
+  end;
+
+end;
+
+procedure TfrmDrugSellP.btnCalculateClick(Sender: TObject);
+begin
+  Calculate;
+end;
+
+end.
